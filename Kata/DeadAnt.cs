@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Kata
+{
+    public class DeadAnt
+    {
+        public int DeadAntCount(string ants)
+        {
+            if (string.IsNullOrEmpty(ants))
+            {
+                return 0;
+            }
+
+            var antWithoutLife = ants.Replace("ant", "").Replace(".", "").Replace(" ", "");
+            if (antWithoutLife.Trim().Length == 0)
+            {
+                return 0;
+            }
+
+            return Math.Max(antWithoutLife.Count(c => c == 'a'), Math.Max(antWithoutLife.Count(c => c == 'n'), antWithoutLife.Count(c => c == 't')));
+        }
+    }
+}

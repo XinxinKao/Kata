@@ -59,6 +59,7 @@
     <Compile Include="StringAverageTest.cs" />
     <Compile Include="BandNameGeneratorTest.cs" />
     <Compile Include="DeadAntUnitTest.cs" />
+    <Compile Include="NextBiggerNumberTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -51,6 +51,7 @@
     <Compile Include="File.cs" />
     <Compile Include="KataSumString.cs" />
     <Compile Include="Leetcode\ContainsDuplicateTwo.cs" />
+    <Compile Include="Leetcode\TwoSumSolution.cs" />
     <Compile Include="NextBiggerNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -54,6 +54,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="KataOnlyOneTest.cs" />
     <Compile Include="LeetcodeTest\ContainsDuplicateTwoTest.cs" />
     <Compile Include="LeetcodeTest\TwoSumSolutionTest.cs" />
     <Compile Include="LeetcodeTest\ThreeSumSolutionTest.cs" />

@@ -14,7 +14,7 @@ namespace KataTest.StringAverage
         [TestCase("n/a", "")]
         public void StringNumberAverageTest(string expected, string inputString)
         {
-            var kata = new KataTest.StringAverage.StringAverage();
+            var kata = new StringAverage();
             var actual = kata.AverageString(inputString);
             Assert.AreEqual(expected, actual);
         }

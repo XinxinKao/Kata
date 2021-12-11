@@ -1,9 +1,7 @@
 ﻿using Kata.Leetcode;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
-using Assert = NUnit.Framework.Assert;
 
-namespace KataTest.LeetcodeTest
+namespace KataTest.Leetcode
 {
     [TestFixture]
     public class TwoSumSolutionTest

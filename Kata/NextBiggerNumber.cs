@@ -22,7 +22,7 @@ namespace Kata
         
         private static long GetNumber(char[] inputArray)
         {
-            var list = inputArray.Select(x => int.Parse(x.ToString())).ToList();
+            var list = inputArray.Select(x => int.Parse((string) x.ToString())).ToList();
             for (var i = list.Count - 1; i >= 1; i--)
             {
                 if (list[i] > list[i - 1])

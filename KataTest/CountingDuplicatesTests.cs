@@ -1,11 +1,10 @@
-﻿using System;
-using Kata;
+﻿using Kata;
 using NUnit.Framework;
 
 namespace KataTest
 {
     [TestFixture]
-    public class CountingDuplicatesTest
+    public class CountingDuplicatesTests
     {
         [TestCase(0, "")]
         [TestCase(0, "abcde")]

@@ -62,7 +62,6 @@ namespace Kata
         }
     }
 }
-
 //1.
 //英文跟數字的轉換, 可以改用Dictionary或Enum
 //目前你的寫法, 如果需要異動轉換表, 在NumberString array及switch裡都會需要改動

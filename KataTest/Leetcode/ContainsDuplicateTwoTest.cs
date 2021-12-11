@@ -1,12 +1,12 @@
 ﻿using Kata.Leetcode;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
-namespace KataTest.LeetcodeTest
+namespace KataTest.Leetcode
 {
-    [TestClass]
+    [TestFixture]
     public class ContainsDuplicateTwoTest
     {
-        [TestMethod]
+        [Test]
         public void Test_ContainsDuplicateTwo_Input_Array_is_Empty_And_0_Output_Is_False()
         {
             var target = new ContainsDuplicateTwo();
@@ -17,7 +17,7 @@ namespace KataTest.LeetcodeTest
             Assert.AreEqual(excepted, actual);
         }
 
-        [TestMethod]
+        [Test]
         public void Test_ContainsDuplicateTwo_Input_Array_is_123_And_0_Output_Is_False()
         {
             var target = new ContainsDuplicateTwo();
@@ -28,7 +28,7 @@ namespace KataTest.LeetcodeTest
             Assert.AreEqual(excepted, actual);
         }
 
-        [TestMethod]
+        [Test]
         public void Test_ContainsDuplicateTwo_Input_Array_is_12341_And_2_Output_Is_False()
         {
             var target = new ContainsDuplicateTwo();
@@ -39,7 +39,7 @@ namespace KataTest.LeetcodeTest
             Assert.AreEqual(excepted, actual);
         }
 
-        [TestMethod]
+        [Test]
         public void Test_ContainsDuplicateTwo_Input_Array_is_12341_And_5_Output_Is_True()
         {
             var target = new ContainsDuplicateTwo();

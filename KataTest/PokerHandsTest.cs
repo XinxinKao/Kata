@@ -1,6 +1,5 @@
 ﻿using Kata;
 using NUnit.Framework;
-using Assert = NUnit.Framework.Assert;
 
 namespace KataTest
 {

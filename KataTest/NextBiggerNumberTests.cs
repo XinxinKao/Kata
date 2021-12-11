@@ -1,15 +1,12 @@
-﻿using System;
-using Kata;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Kata;
 using NUnit.Framework;
-using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace KataTest
 {
-    [TestClass]
+    [TestFixture]
     public class NextBiggerNumberTests
     {
-        [TestMethod]
+        [Test]
         public void TestNextBiggerNumber_When_Input_Is_11_Output_Will_Be_Negative_1()
         {
             var inputNumber = 11;
@@ -17,7 +14,7 @@ namespace KataTest
             TestNextBiggerNumber(expected, inputNumber);
         }
 
-        [TestMethod]
+        [Test]
         public void TestNextBiggerNumber_When_Input_Is_12_Output_Will_Be_21()
         {
             var inputNumber = 12;
@@ -25,7 +22,7 @@ namespace KataTest
             TestNextBiggerNumber(expected, inputNumber);
         }
 
-        [TestMethod]
+        [Test]
         public void TestNextBiggerNumber_When_Input_Is_513_Output_Will_Be_531()
         {
             var inputNumber = 513;
@@ -33,7 +30,7 @@ namespace KataTest
             TestNextBiggerNumber(expected, inputNumber);
         }
 
-        [TestMethod]
+        [Test]
         public void TestNextBiggerNumber_When_Input_Is_2017_Output_Will_Be_2071()
         {
             var inputNumber = 2017;
@@ -41,7 +38,7 @@ namespace KataTest
             TestNextBiggerNumber(expected, inputNumber);
         }
 
-        [TestMethod]
+        [Test]
         public void TestNextBiggerNumber_When_Input_Is_414_Output_Will_Be_441()
         {
             var inputNumber = 414;
@@ -49,7 +46,7 @@ namespace KataTest
             TestNextBiggerNumber(expected, inputNumber);
         }
 
-        [TestMethod]
+        [Test]
         public void TestNextBiggerNumber_When_Input_Is_144_Output_Will_Be_414()
         {
             var inputNumber = 144;
@@ -65,4 +62,3 @@ namespace KataTest
         }
     }
 }
-

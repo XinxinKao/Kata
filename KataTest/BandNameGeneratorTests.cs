@@ -1,11 +1,10 @@
 ﻿using Kata;
 using NUnit.Framework;
-using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace KataTest
 {
     [TestFixture]
-    public class BandNameGeneratorTest
+    public class BandNameGeneratorTests
     {
         [TestCase("The Knife", "knife")]
         [TestCase("Tartart", "tart")]
@@ -13,8 +12,8 @@ namespace KataTest
         [TestCase("The Bed", "bed")]
         public void BandNameGeneratorTestCase(string expected, string inputString)
         {
-            var nameGenerator = new BandNameGenerator();
-            var actual = nameGenerator.Generator(inputString);
+            var bandNameGenerator = new BandNameGenerator();
+            var actual = bandNameGenerator.Generator(inputString);
             Assert.AreEqual(expected, actual);
         }
     }

@@ -1,6 +1,5 @@
 ﻿using Kata;
 using NUnit.Framework;
-using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace KataTest
 {
@@ -20,6 +19,5 @@ namespace KataTest
             var actual = kata.AverageString(inputString);
             Assert.AreEqual(expected, actual);
         }
-
     }
 }

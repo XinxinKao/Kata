@@ -1,16 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata", "Kata\Kata.csproj", "{1DC984D0-338E-4C93-8C02-0280B4236823}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata", "Kata\Kata.csproj", "{54A5B618-4AF6-4048-B1EF-F02516B3A745}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataTest", "KataTest\KataTest.csproj", "{EAA2DD1B-520A-475F-A61E-30C85394DA1A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2AB16423-2736-4C46-9BFC-08DC53310B07}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\packages.config = .nuget\packages.config
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataTest", "KataTest\KataTest.csproj", "{9EEC6D22-3EC2-47FE-BBAF-B7C2D57523AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,16 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1DC984D0-338E-4C93-8C02-0280B4236823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1DC984D0-338E-4C93-8C02-0280B4236823}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1DC984D0-338E-4C93-8C02-0280B4236823}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1DC984D0-338E-4C93-8C02-0280B4236823}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EAA2DD1B-520A-475F-A61E-30C85394DA1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EAA2DD1B-520A-475F-A61E-30C85394DA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EAA2DD1B-520A-475F-A61E-30C85394DA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EAA2DD1B-520A-475F-A61E-30C85394DA1A}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
+		{54A5B618-4AF6-4048-B1EF-F02516B3A745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54A5B618-4AF6-4048-B1EF-F02516B3A745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54A5B618-4AF6-4048-B1EF-F02516B3A745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54A5B618-4AF6-4048-B1EF-F02516B3A745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EEC6D22-3EC2-47FE-BBAF-B7C2D57523AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EEC6D22-3EC2-47FE-BBAF-B7C2D57523AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EEC6D22-3EC2-47FE-BBAF-B7C2D57523AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EEC6D22-3EC2-47FE-BBAF-B7C2D57523AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

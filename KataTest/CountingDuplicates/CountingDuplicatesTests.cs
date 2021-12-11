@@ -1,7 +1,6 @@
-﻿using Kata;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
-namespace KataTest
+namespace KataTest.CountingDuplicates
 {
     [TestFixture]
     public class CountingDuplicatesTests
@@ -14,7 +13,7 @@ namespace KataTest
         [TestCase(2, "Indivisibilities")]
         public void TestDuplicateCountUnitTest(int expected, string inputString)
         {
-            var countingDuplicates = new CountingDuplicates();
+            var countingDuplicates = new KataTest.CountingDuplicates.CountingDuplicates();
             var actual = countingDuplicates.DuplicateCount(inputString);
             Assert.AreEqual(expected, actual);
         }

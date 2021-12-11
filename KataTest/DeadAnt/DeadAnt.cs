@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Kata
+namespace KataTest.DeadAnt
 {
     public class DeadAnt
     {

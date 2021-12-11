@@ -12,6 +12,8 @@ namespace KataTest.StringAverage
         [TestCase("zero", "zero zero zero zero zero")]
         [TestCase("two", "one one eight one")]
         [TestCase("n/a", "")]
+        [TestCase("n/a", "three gdtgyd gdtgyd eight five three")]
+        [TestCase("six", "nine four")]
         public void StringNumberAverageTest(string expected, string inputString)
         {
             var kata = new StringAverage();

@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace Kata
+namespace KataTest.OnlyOne
 {
     public class KataOnlyOne
     {

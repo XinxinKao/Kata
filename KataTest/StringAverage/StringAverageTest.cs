@@ -1,7 +1,6 @@
-﻿using Kata;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
-namespace KataTest
+namespace KataTest.StringAverage
 {
     [TestFixture]
     public class StringAverageTest
@@ -15,7 +14,7 @@ namespace KataTest
         [TestCase("n/a", "")]
         public void StringNumberAverageTest(string expected, string inputString)
         {
-            var kata = new StringAverage();
+            var kata = new KataTest.StringAverage.StringAverage();
             var actual = kata.AverageString(inputString);
             Assert.AreEqual(expected, actual);
         }

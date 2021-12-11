@@ -1,4 +1,4 @@
-﻿namespace Kata
+﻿namespace KataTest.BandNameGenerator
 {
     public class BandNameGenerator
     {

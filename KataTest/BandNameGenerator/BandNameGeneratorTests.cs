@@ -1,7 +1,6 @@
-﻿using Kata;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
-namespace KataTest
+namespace KataTest.BandNameGenerator
 {
     [TestFixture]
     public class BandNameGeneratorTests
@@ -12,7 +11,7 @@ namespace KataTest
         [TestCase("The Bed", "bed")]
         public void BandNameGeneratorTestCase(string expected, string inputString)
         {
-            var bandNameGenerator = new BandNameGenerator();
+            var bandNameGenerator = new KataTest.BandNameGenerator.BandNameGenerator();
             var actual = bandNameGenerator.Generator(inputString);
             Assert.AreEqual(expected, actual);
         }

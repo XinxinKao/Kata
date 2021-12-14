@@ -1,68 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace KataTest.StringAverage
 {
     public class StringAverage
     {
-        private readonly Dictionary<string, int> _numberLookup = new Dictionary<string, int>()
-        {
-            {"zero", 0},
-            {"one", 1},
-            {"two", 2},
-            {"three", 3},
-            {"four", 4},
-            {"five", 5},
-            {"six", 6},
-            {"seven", 7},
-            {"eight", 8},
-            {"nine", 9}
-        };
+        private readonly string[] _numberLookup = new[] {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
 
         public string AverageString(string input)
         {
-            if (string.IsNullOrEmpty(input))
+            var numberWords = input.Split();
+            
+            if (IsNotFitInNumberLookup(numberWords))
             {
                 return "n/a";
             }
             
-            var numbers = input.Split(' ');
-
-            try
-            {
-                var total = ConvertToInt(numbers).Sum();
-
-                var average = total / numbers.Length;
-
-                return GetNumberFromLookup(average);
-            }
-            catch (OutOfRangeException exception)
-            {
-                return "n/a";
-            }
+            return _numberLookup[(int)Math.Floor(numberWords.Select(x => Array.IndexOf(_numberLookup, x)).Average())];
         }
 
-        private string GetNumberFromLookup(int average)
+        private bool IsNotFitInNumberLookup(string[] numberWords)
         {
-            return _numberLookup.FirstOrDefault(x => x.Value == average).Key;
+            return !numberWords.All(_numberLookup.Contains);
         }
-
-        private IEnumerable<int> ConvertToInt(IEnumerable<string> numberString)
-        {
-            foreach (var item in numberString)
-            {
-                if (!_numberLookup.ContainsKey(item))
-                {
-                    throw new OutOfRangeException();
-                }
-
-                yield return _numberLookup[item];
-            }
-        }
-    }
-
-    internal class OutOfRangeException : Exception
-    {
     }
 }

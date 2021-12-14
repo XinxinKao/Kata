@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace KataTest.StringAverage
@@ -27,12 +28,19 @@ namespace KataTest.StringAverage
             }
             
             var numbers = input.Split(' ');
-            
-            var total = ConvertToInt(numbers).Sum();
 
-            var average = total / numbers.Length;
+            try
+            {
+                var total = ConvertToInt(numbers).Sum();
 
-            return GetNumberFromLookup(average);
+                var average = total / numbers.Length;
+
+                return GetNumberFromLookup(average);
+            }
+            catch (OutOfRangeException exception)
+            {
+                return "n/a";
+            }
         }
 
         private string GetNumberFromLookup(int average)
@@ -42,7 +50,19 @@ namespace KataTest.StringAverage
 
         private IEnumerable<int> ConvertToInt(IEnumerable<string> numberString)
         {
-            return numberString.Select(item => _numberLookup[item]);
+            foreach (var item in numberString)
+            {
+                if (!_numberLookup.ContainsKey(item))
+                {
+                    throw new OutOfRangeException();
+                }
+
+                yield return _numberLookup[item];
+            }
         }
+    }
+
+    internal class OutOfRangeException : Exception
+    {
     }
 }

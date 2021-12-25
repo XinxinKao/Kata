@@ -1,25 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Kata
+namespace KataTest.PokerHands
 {
-    public static class PokerHands
-    {
-        public static string GetResult(PlayerCards player1, PlayerCards player2)
-        {
-            return string.Empty;
-        }
-    }
-
-    public enum CardSuit
-    {
-        C = 0,
-        D = 1,
-        H = 2,
-        S = 3
-    }
-    
-
     public class PlayerCards
     {
         public PlayerCards(string name)

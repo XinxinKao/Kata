@@ -1,7 +1,7 @@
 ﻿using Kata;
 using NUnit.Framework;
 
-namespace KataTest
+namespace KataTest.PokerHands
 {
     [TestFixture]
     public class PokerHandsTest

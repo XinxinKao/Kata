@@ -13,14 +13,9 @@ namespace KataTest.NextBiggerNumber
         [TestCase(144, 414)]
         public void NextBiggerNumberTest(int num, int expected)
         {
-            TestNextBiggerNumber(expected, num);
-        }
-
-        private void TestNextBiggerNumber(long expected, long inputNumber)
-        {
             var nextBiggerNumber = new NextBiggerNumber();
-            var actual = nextBiggerNumber.GetNextBiggerNumber(inputNumber);
-            Assert.AreEqual(expected, actual);
+            var actual = nextBiggerNumber.GetNextBiggerNumber(num);
+            Assert.AreEqual((long) expected, actual);
         }
     }
 }

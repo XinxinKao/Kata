@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
-namespace Kata
+namespace KataTest.SumString
 {
-    public class KataSumString
+    public static class KataSumString
     {
         public static string SumStrings(string a, string b)
         {
@@ -17,7 +17,7 @@ namespace Kata
                 return string.Empty;
             }
 
-            if (IsBothInputLenthSame(a, b))
+            if (IsBothInputLengthSame(a, b))
             {
                 return string.Empty;
             }
@@ -34,7 +34,7 @@ namespace Kata
             return string.Join("", outputArray);
         }
 
-        private static bool IsBothInputLenthSame(string a, string b)
+        private static bool IsBothInputLengthSame(string a, string b)
         {
             return a.Trim().Length != b.Trim().Length;
         }

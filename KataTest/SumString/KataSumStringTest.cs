@@ -1,11 +1,16 @@
-﻿using Kata;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
-namespace KataTest
+namespace KataTest.SumString
 {
     [TestFixture]
     public class KataSumStringTest
     {
+        [Test]
+        public void Given_1_And_2_Returns_3()
+        {
+            Assert.AreEqual("3", KataSumString.SumStrings("1", "2"));
+        }
+        
         [Test]
         public void Given_123_And_456_Returns_579()
         {

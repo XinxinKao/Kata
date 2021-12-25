@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Kata
 {
-    public class PokerHands
+    public static class PokerHands
     {
         public static string GetResult(PlayerCards player1, PlayerCards player2)
         {

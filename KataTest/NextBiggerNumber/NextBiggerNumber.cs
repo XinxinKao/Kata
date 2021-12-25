@@ -1,10 +1,11 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace KataTest.NextBiggerNumber
 {
-    public class NextBiggerNumber
+    public static class NextBiggerNumber
     {
-        public long GetNextBiggerNumber(long input)
+        public static long GetNextBiggerNumber(long input)
         {
             var inputString = input.ToString();
 
@@ -20,7 +21,7 @@ namespace KataTest.NextBiggerNumber
             return number;
         }
         
-        private static long GetNumber(char[] inputArray)
+        private static long GetNumber(IEnumerable<char> inputArray)
         {
             var list = inputArray.Select(x => int.Parse((string) x.ToString())).ToList();
             for (var i = list.Count - 1; i >= 1; i--)

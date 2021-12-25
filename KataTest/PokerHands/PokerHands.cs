@@ -4,7 +4,7 @@
     {
         public static string GetResult(PlayerCards player1, PlayerCards player2)
         {
-            return string.Empty;
+            return string.Empty; //todo
         }
     }
 }

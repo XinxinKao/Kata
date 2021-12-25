@@ -1,7 +1,6 @@
-﻿using Kata;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
-namespace KataTest
+namespace KataTest.NextBiggerNumber
 {
     [TestFixture]
     public class NextBiggerNumberTests
